@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>
+        Add
+    </title>
+
+<script>
+    function addBox() {
+       var v1 = document.getElementById("form1").elements.namedItem("value1").value;
+       var v2 = document.getElementById("form1").elements.namedItem("value2").value;
+
+        alert(Number(v1) + Number(v2));
+    }
+</script>
+
+</head>
+<body>
+
+<form id=form1 name=form1>
+
+    Value1: <input type="text" name=value1 id=value1 value="" size=15 /> <br>
+    Value2: <input type="text" name=value2 id=value2 value="" size=15 /> 
+</form>
+
+<button onclick="addBox()">Add </button> 
+</body>
+
+</html>
